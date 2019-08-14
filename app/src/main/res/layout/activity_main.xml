@@ -1,18 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_blue_700"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Operaciones Basicas"
+        android:textColor="@color/md_white_1000"
+        android:textSize="29dp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+       android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/s" />
+
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/md_white_1000"
+        android:hint="Dame un numero"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/md_white_1000"
+        android:hint="Dame Tu segundo Numero"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:onClick="onclick"
+            android:id="@+id/btnSuma"
+            android:text="+"
+            android:textSize="23dp"
+            android:textColor="@color/md_cyan_900"
+            android:textStyle="bold"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btnResta"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+           android:layout_toRightOf="@id/btnSuma"
+            android:layout_toEndOf="@id/btnSuma"
+            android:text="-"
+            android:textColor="@color/md_cyan_900"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:onClick="onclick"/>
+        <Button
+            android:id="@+id/btnMultiplicacion"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/btnResta"
+            android:layout_toEndOf="@id/btnResta"
+            android:text="*"
+            android:textColor="@color/md_cyan_900"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:onClick="onclick"/>
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/btnMultiplicacion"
+            android:layout_toEndOf="@id/btnMultiplicacion"
+            android:text="*"
+            android:textColor="@color/md_cyan_900"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:onClick="onclick"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="@color/md_white_1000"
+        android:textSize="29dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IMC"
+        android:text="I M C"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="onclick"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/md_cyan_300"
+        android:drawableLeft="@drawable/broom"
+        android:paddingLeft="10dp"
+        android:text="Limpiar"
+        android:textColor="@color/md_white_1000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="onclick"/>
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
