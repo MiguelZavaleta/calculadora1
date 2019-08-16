@@ -11,6 +11,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:id="@+id/panelp"
     tools:context=".MainActivity">
 
     <TextView
@@ -114,19 +115,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/IMC"
-        android:text="I M C"
+        android:id="@+id/ButIMC"
+        android:text="IMC"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:onClick="onclick"/>
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center">
+        android:onClick="Activar"/>
     <Button
+        android:id="@+id/limp"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:background="@color/md_cyan_300"
         android:drawableLeft="@drawable/broom"
         android:paddingLeft="10dp"
         android:text="Limpiar"
@@ -134,6 +131,11 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:onClick="onclick"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
 
 
 </RelativeLayout>
