@@ -116,28 +116,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ButIMC"
-        android:text="IMC"
+        android:text="Calcula tu IMC"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:onClick="Activar"/>
+        android:onClick="LIMPIA"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
     <Button
         android:id="@+id/limp"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/broom"
+        android:background="@color/md_red_500"
         android:paddingLeft="10dp"
         android:text="Limpiar"
         android:textColor="@color/md_white_1000"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:onClick="onclick"/>
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center">
-
-
-
+        android:onClick="LIMPIA"/>
 </RelativeLayout>
 
 
